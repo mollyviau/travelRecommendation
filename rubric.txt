@@ -3,11 +3,15 @@
 (0) console.log to view fetched json data
 ( ) create search function to search for keywords Beaches, temples, and country names
     (0) get/store user input 
-    ( ) sanitize user search input
-    ( ) filter through array of travel entries to find matches
-    ( ) store matching travel entries in search results array
-    ( ) display search results after user clicks search, with image, title, and description
+    (0) sanitize user search input
+    (0) filter through array of travel entries to find matches
+    (0) store matching travel entries in search results array
+    (0) display search results after user clicks search, with image, title, and description
+    ( ) format module better
+    ( ) write function display for no results found on modal
+    ( ) fix modal X closing it
     ( ) when user clicks "clear" button, search results are cleared from page
+    ( ) fix countries search display
 
 
 Task 10: Country date and time (optional)
