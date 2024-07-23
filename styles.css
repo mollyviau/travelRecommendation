@@ -1,0 +1,314 @@
+/* Apply box-sizing to all elements for easier handling of padding and borders */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Optional: Add a default font-family */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#navBar {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between the title and the form */
+    padding: 10px 10px 10px 10px; /* Optional: Add some padding for spacing */
+}
+
+#navLinks {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navLinks > li {
+    margin-left: 15px;
+}
+
+#navLinks > li > a {
+    text-decoration: none;
+    color: inherit; /* Optional: Ensure the link inherits the text color */
+}
+
+form {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin: 0;
+}
+
+input,
+textarea {
+    margin: 6px 1px 12px 1px;
+}
+
+#searchInput {
+    height: 25px; /* Increase the height for better alignment */
+    margin: auto 0;
+}
+
+#searchInputLbl {
+    align-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.hero {
+    background-image: url(images/town-night-background-image-home.jpg);
+    height: 60vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.1
+    ); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.heroText {
+    position: relative;
+    z-index: 2; /* Place text above the overlay */
+}
+
+.heroText h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.heroText p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+/* Content area styling */
+main {
+    flex: 1; /* This ensures that the main content area grows to fill available space */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px; /* Spacing between the icons */
+}
+
+.social-icon {
+    color: #fff; /* Icon color */
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00aced; /* Change icon color on hover */
+}
+
+.photogSource {
+    text-align: right;
+    font-size: 0.65rem;
+    margin: 5px 25px 0 0;
+}
+
+.articles {
+    margin: 20px;
+}
+
+.articlesTitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 950px;
+    padding-bottom: 9px;
+}
+
+.articleLinks {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px; /* Optional: space between the images */
+}
+
+.articleLink {
+    flex: 1;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.articleImageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust this value to suit your design */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Hide any overflow */
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width * 100%) */
+}
+.articleLink img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    align-items: normal;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #fff;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 7px;
+    font-weight: 600;
+    height: 30px; /* Increase the height for better alignment */
+    margin: 0 7.5px;
+}
+
+#contactBtn {
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+button:hover {
+    background-color: #ededed;
+}
+
+#bookNowBtn {
+    font-style: italic;
+    font-weight: 600;
+    color: #ffff;
+    text-decoration: none;
+}
+
+#bookNowBtn:hover {
+    text-decoration: underline;
+    color: #ededed;
+}
+
+.aboutTextHome {
+    padding-top: 150px;
+}
+
+.aboutTextHome p {
+    padding: 8px 0 15px 0;
+}
+
+.boldSpan {
+    font-weight: 600;
+}
+
+.contactLink {
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.contactLink:visited {
+    color: #0000;
+}
+
+.plainLink {
+    text-decoration: none;
+}
+
+.plainLink:visited {
+    color: #0000;
+    text-decoration: none;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 750px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalBody {
+    text-align:center;
+}
